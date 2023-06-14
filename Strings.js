@@ -16,3 +16,9 @@ console.log("length of the string :" , myName.length);
 // to know the last index of the String
 
 console.log("Last index of the string :" , myName.length-1); 
+
+// template string 
+let myName1 = "Yogesh M Mayekar";
+let myAge = 24;
+let aboutMe = `My name is ${myName1} and my age is ${myAge}.`;
+console.log(aboutMe);
