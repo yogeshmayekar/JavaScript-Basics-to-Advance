@@ -24,3 +24,8 @@ console.log("type of my string1 is:", typeof myString1);
 // console.log("type of my string2 is:", typeof myString2)
 let myString2 = Number(myString1)
 console.log("type of my string2 is:", typeof myString2)
+
+
+//null
+let outLine = null;
+console.log(typeof outLine, outLine);
