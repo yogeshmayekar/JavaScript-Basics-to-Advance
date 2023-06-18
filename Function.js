@@ -61,3 +61,14 @@ console.log(namaste());
 // or 
 let namaste2=()=> "Namaste World 2";
 console.log(namaste2());
+
+// function inside function 
+const app= () => {
+    const myFunction=()=>{
+        console.log("Hello from my function");
+    }
+    console.log("inside app");
+    myFunction();
+}
+
+app();
