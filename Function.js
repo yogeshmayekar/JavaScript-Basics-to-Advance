@@ -93,3 +93,26 @@ function dashBord(aj2,bj2,...cj2){   //set default parameter ct as zero
 
 
 dashBord(1,2,3,4,5,6,7,8,9);
+
+// param destructuring 
+const person ={
+    firstName : "yogesh",
+    age : 24,
+    gender : "male",
+    skill : "Programmer"
+}
+
+// function printDetails(objects){
+//     console.log(objects.firstName);
+//     console.log(objects.age);
+// }
+
+// destructuring 
+function printDetails({firstName,age,gender}){
+    console.log(firstName)
+    console.log(age);
+    console.log(gender);
+}
+
+
+printDetails(person);
