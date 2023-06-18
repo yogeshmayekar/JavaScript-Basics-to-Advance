@@ -72,3 +72,14 @@ const app= () => {
 }
 
 app();
+
+// default parameter 
+function dashBord(at,bt,ct=0){   //set default parameter ct as zero
+    let olt = at + bt + ct;
+    console.log(olt);
+}
+
+let at = 34;
+let bt = 8;
+let ct = 9;
+dashBord(at,bt);
