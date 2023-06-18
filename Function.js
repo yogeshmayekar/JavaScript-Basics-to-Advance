@@ -83,3 +83,13 @@ let at = 34;
 let bt = 8;
 let ct = 9;
 dashBord(at,bt);
+
+
+// rest parameter 
+function dashBord(aj2,bj2,...cj2){   //set default parameter ct as zero
+    let olt2 = aj2 + bj2 + cj2;
+    console.log(olt2);
+}
+
+
+dashBord(1,2,3,4,5,6,7,8,9);
