@@ -19,4 +19,13 @@ users.forEach(function(user){
     console.log(user.firstName);
 })
 
+// map method 
+const numDatas = [43, 76, 90, 55, 13];
+
+let ans = numDatas.map(function(numData){
+    return numData+2;   // it is mendentory to return from the function insted of console to avoid unddefine values
+})
+console.log(ans);  //map method returns new array
+
+
 
