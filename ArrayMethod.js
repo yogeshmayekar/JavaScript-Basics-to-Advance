@@ -27,5 +27,22 @@ let ans = numDatas.map(function(numData){
 })
 console.log(ans);  //map method returns new array
 
+let ans2 = users.map((user)=>{
+    return user.firstName;
+});
+
+console.log(ans2);
+
+// filter function 
+let nums = [2,7,4,13,12,6,21];
+let ans3 = nums.filter((num)=>{
+    if(num%2===0){
+        return num;
+    }
+});
+
+console.log(ans3);  // this method filters according to condition and returns array 
+
+
 
 
