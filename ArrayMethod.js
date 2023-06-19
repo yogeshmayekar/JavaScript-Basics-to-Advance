@@ -43,6 +43,27 @@ let ans3 = nums.filter((num)=>{
 
 console.log(ans3);  // this method filters according to condition and returns array 
 
+// reduce method 
+
+const nums2 = [1,2,3,4,5,6,7,8,9,10];
+
+let ans4 = nums2.reduce((accumulator, currentValue)=>{
+    return accumulator + currentValue;
+},5)
+console.log(ans4);
+
+const userCart = [
+    {productId:1, productName:"apple", price:12000},
+    {productId:2, productName:"mi", price:14999},
+    {productId:3, productName:"samsung", price:17500},
+    {productId:4, productName:"oppo", price:10000},
+];
+
+let totelBill = userCart.reduce((totelPrice, currentProducts)=>{
+    return currentProducts.price + totelPrice;
+},0);
+
+console.log(totelBill);
 
 
 
