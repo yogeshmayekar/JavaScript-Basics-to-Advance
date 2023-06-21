@@ -65,5 +65,28 @@ let totelBill = userCart.reduce((totelPrice, currentProducts)=>{
 
 console.log(totelBill);
 
+// sort method 
+// sort method change the original array so we need to clone the array 
+const num5 = [4,7,1200,67,21,11,34,8455];
+num5.sort((a,b)=>a-b);  //accending order
+console.log(num5);
 
+// price lowToHigh and highToLow
+const products = [
+    {productId: 1, productName:"p1", price:4000},
+    {productId: 2, productName:"p2", price:500},
+    {productId: 3, productName:"p3", price:12000},
+    {productId: 4, productName:"p4", price:9000},
+]
 
+//lowToHigh
+products.slice(0).sort((a,b)=>{
+    return a.price-b.price
+});
+console.log("Price Low to High",products);
+
+//highToLow
+products.slice(0).sort((a,b)=>{
+    return b.price-a.price
+});
+console.log("Price High to Low",products); 
