@@ -112,3 +112,29 @@ console.log(ans6);  //it will returns the first false value
 const number = [3,5,8,9];
 const ans7 = number.some((num)=>num%2===0);
 console.log(ans7);   //if any one value satispy it return true otherwise false 
+
+
+// fill method 
+// value, start, end 
+const array8 = new Array(10).fill(-5);
+console.log(array8);
+
+const array9 = [1,2,3,4,5,6,7,8,9,10];
+array9.fill(-2,3,8);
+console.log(array9);
+
+// splice method 
+// start, delete, insert 
+// splice method change the original array 
+const myArray = ['item1','item2','item 3'];
+myArray.splice(1,1);  // to delete  it also return the deleted values
+console.log(myArray);
+
+myArray.splice(1,0,"item22");
+console.log(myArray);  // to insert without delete any item
+
+// insert and deletion at once 
+myArray.splice(1,2,"item42", "item43","item44");
+console.log(myArray);
+
+
