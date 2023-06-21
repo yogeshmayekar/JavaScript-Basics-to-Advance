@@ -90,3 +90,25 @@ products.slice(0).sort((a,b)=>{
     return b.price-a.price
 });
 console.log("Price High to Low",products); 
+
+// find method 
+// find method finds first occurence value 
+const array = ["orange","man","cat","mango","dog"];
+const ans5 = array.find((s)=>{
+    return s.length===3;
+})
+console.log(ans5);
+
+//Every method
+// every mrthod returns boolean values 
+const num6 = [2,4,6,8,9,10];
+const ans6 = num6.every((num)=>{
+    return num%2===0;
+})
+console.log(ans6);  //it will returns the first false value
+
+
+// some method 
+const number = [3,5,8,9];
+const ans7 = number.some((num)=>num%2===0);
+console.log(ans7);   //if any one value satispy it return true otherwise false 
