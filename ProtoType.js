@@ -32,3 +32,20 @@ const user2 = createUser("swara", "Naik", "swaranaik00@gmail.com", 21, "Goa")
 console.log(user1.is18());
 console.log(user2);
 console.log(user2.about());
+
+
+// new keyword 
+// 1. new keyword create empty object 
+// 2.new keyword returns created objects 
+// 3. it works as a prototype automatically 
+function createCustomer(firstName, age){
+    this.firstName = firstName;
+    this.age = age;
+}
+createCustomer.prototype.about = function(){
+    console.log(this.firstName, this.age);
+}
+const customer1 = new createCustomer("yogesh M", 24);
+console.log(customer1);
+
+customer1.about();
